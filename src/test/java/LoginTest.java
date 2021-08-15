@@ -30,6 +30,7 @@ public class LoginTest {
 		driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/div/button/span")).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"password\"]/div[1]/div/div[1]/input"))).sendKeys("duhhj");
 		//driver.findElement(By.xpath("//*[@id=\"password\"]/div[1]/div/div[1]/input")).sendKeys("sshshs");
+		driver.findElement(By.xpath("//*[@id=\"passwordNext\"]/div/button/span")).click();
 	}
 	@AfterTest
 	public void tearDown() {
